@@ -8,7 +8,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom'], // Externalize 'react-router-dom' to avoid build issues
+      external: ['axios'],
     },
   },
 });

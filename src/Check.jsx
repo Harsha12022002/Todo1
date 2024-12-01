@@ -29,7 +29,7 @@ function Check() {
   };
 
   const handleCompleteTask = (id) => {
-    setTasks(
+    setTasks( 
       tasks.map(task =>
         task.id === id ? { ...task, status: "Completed" } : task
       )
@@ -52,7 +52,7 @@ function Check() {
         <table className="min-w-full divide-y-2 divide-gray-300 text-sm bg-white shadow-lg rounded-lg">
           <thead className="bg-gradient-to-r from-indigo-600 to-purple-500 text-white">
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-bold tracking-wider">Name</th>
+              <th className="px-6 py-3 text-left text-xs font-bold tracking-wider">Date</th>
               <th className="px-6 py-3 text-left text-xs font-bold tracking-wider">Status</th>
               <th className="px-6 py-3 text-left text-xs font-bold tracking-wider">Actions</th>
             </tr>
